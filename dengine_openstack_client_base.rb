@@ -11,11 +11,11 @@ module  Engine
 	    def connection
 	      @connection ||= begin
 		     connection = OpenStack::Connection.create({
-		            :username=>"osmosis", 
-		            :api_key=>"osmosis", 
+		            :username=>"Admin", 
+		            :api_key=>"*********", 
 		            :auth_method=>"password", 
-		            :auth_url=>"http://10.100.60.231:5000/v3", 
-		            :authtenant_name=>"DEngine",
+		            :auth_url=>"http://openstack_url/v3", 
+		            :authtenant_name=>"DemoEngine",
                             :service_type=>"network"})
 				  
 	      end
